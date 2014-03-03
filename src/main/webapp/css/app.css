@@ -1,30 +1,159 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+@font-face {
+    font-family: 'Nick Glade';
+    src: url('../fonts/NickGlade.ttf');
+    src: url('../fonts/NickGlade.eot?#iefix') format('embedded-opentype'), url('../fonts/NickGlade.woff') format('woff'), url('../fonts/NickGlade.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nick Glade Bold';
+    src: url('../fonts/NickGladeB.ttf');
+    src: url('../fonts/NickGladeB.ttf') format('truetype');
+}
+html, body {
+    font-family: 'Nick Glade';
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.poc-nav > li > a {
+    font-size: 18px;
+    line-height: 25px;
+}
+.poc-nav-right {
+    float: right;
 }
 
-.menu:before {
-  content: "[";
-}
 
-.menu:after {
-  content: "]";
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 13px;
+    margin-right: 15px;
+    margin-bottom: 13px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
-
-.menu > li {
-  display: inline;
+.poc-nav-container {
+    min-height: 60px;
 }
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.navbar-brand {
+    font-family: 'Nick Glade Bold';
+    float: left;
+    padding: 15px 15px;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: bolder;
 }
+.poc-nav-inverse {
+    background: url(../img/Nav_Background.png) repeat-x;
+    background-color: #222222;
+    border-color: #080808;
+}
+.poc-nav-inverse .navbar-brand {
+    color: #09F;
+}
+.poc-nav-inverse .navbar-brand:hover, .poc-nav-inverse .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+.poc-nav-inverse .navbar-text {
+    color: #999999;
+}
+.poc-nav-inverse .navbar-nav > li > a {
+    color: #afbcc5;
+}
+.poc-nav-inverse .navbar-nav > li > a:hover, .poc-nav-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+.poc-nav-inverse .navbar-nav > .active > a, .poc-nav-inverse .navbar-nav > .active > a:hover, .poc-nav-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #080808;
+}
+.poc-nav-inverse .navbar-nav > .disabled > a, .poc-nav-inverse .navbar-nav > .disabled > a:hover, .poc-nav-inverse .navbar-nav > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+}
+.poc-nav-inverse .navbar-toggle {
+    border-color: #333333;
+}
+.poc-nav-inverse .navbar-toggle:hover, .poc-nav-inverse .navbar-toggle:focus {
+    background-color: #333333;
+}
+.poc-nav-inverse .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.poc-nav-inverse .navbar-collapse, .poc-nav-inverse .navbar-form {
+    border-color: #101010;
+}
+.poc-nav-inverse .navbar-nav > .open > a, .poc-nav-inverse .navbar-nav > .open > a:hover, .poc-nav-inverse .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #080808;
+}
+@media (max-width: 767px) {
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: #080808;
+    }
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu .divider {
+        background-color: #080808;
+    }
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #999999;
+    }
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+        background-color: transparent;
+    }
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #080808;
+    }
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444444;
+        background-color: transparent;
+    }
+}
+.poc-header {
+    background: url(../img/header_background.jpg) repeat-x;
+    height: 260px;
+    margin-bottom:-60px;
+}
+.poc-header > .container > h1 {
+    font-family: 'Nick Glade Bold';
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+    text-shadow: #000 -1px -1px 0;
+}
+.poc-header > .container > p {
+    font-family: 'Nick Glade Bold';
+    font-size: 18px;
+    color: white;
+}
+.poc-header > .container {
+    padding-top: 80px;
+}
+.folderUp{position:relative;width:100%; height:60px;}
+.folderDown{position:relative; z-index:1;width:100%; height:40px; background:url(../img/folderBar_background.jpg) repeat-x;	box-shadow:#333 0px 3px 5px;}
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.folderBar{
+    width:100%;
+    height:100px;
+    z-index:5;
+}
+.folderBar .container > .glyphicon{
+    font-size:20px;
+    margin-top:8px;
+    float:left;
+}
+.folderBar .container > p{
+    font-size:18px;
+    margin:8px 15px;
+    float:left;
+}
+.content{
+    margin-top:20px;
+    width:100%;
+    height:1200px;
 }
