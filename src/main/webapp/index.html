@@ -2,7 +2,7 @@
 <html lang="en" ng-app="pet1000">
 <head>
     <meta charset="utf-8">
-    <title>My AngularJS App</title>
+    <title>宠爱万千</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/site-header.css"/>
     <link rel="stylesheet" href="css/app.css"/>
@@ -13,7 +13,7 @@
         <div class="navbar-header">
             <button data-target="navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span
                     class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a href="#!/" class="navbar-brand hidden-sm">Pet1000</a></div>
+            <a href="#/home" class="navbar-brand hidden-sm">Pet1000</a></div>
         <div class="navbar-collapse collapse" style="height: auto;">
             <ul class="nav navbar-nav poc-nav">
                 <li ui-route="/petServices" ng-class="{active: $uiRoute}">
@@ -28,11 +28,11 @@
                 <li ui-route="/petOffers" ng-class="{active: $uiRoute}">
                     <a href="#/petOffers">优惠信息</a>
                 </li>
-                <li ui-route="/petOffers" ng-class="{active: $uiRoute}">
-                    <a href="#/petOffers">寻找宠物店</a>
+                <li ui-route="/petStore" ng-class="{active: $uiRoute}">
+                    <a href="#/petStore">寻找宠物店</a>
                 </li>
-                <li ui-route="/customers" ng-class="{active: $uiRoute}">
-                    <a href="#/customers">论坛入口</a>
+                <li>
+                    <a href="#/home">论坛入口</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav poc-nav-right authentication" data-ng-hide="global.authenticated">
@@ -104,6 +104,7 @@
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular-ui-utils/ui-utils.js"></script>
 <script src="lib/bootstrap/bootstrap.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services/services.js"></script>
