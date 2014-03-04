@@ -126,7 +126,7 @@
 
 .poc-header {
     background: url(../img/header_background.jpg) repeat-x;
-    height: 150px;
+
 }
 
 .poc-header h2 {
@@ -188,6 +188,27 @@
     font-size: 12px;
     text-decoration: none;
 }
+.pinput {
+	border: 1px solid #bfc3d1;
+    height: 30px;
+	border-radius: 4px;
+	/* color: #AAAAAA; */
+	background-color: #FFFFFF;
+	padding: 5px;
+	box-shadow: inset 1px 1px 2px rgba(140,140,140,.4);
+}
+.pinput:focus{
+    border: 1px solid #1780FB;
+    box-shadow: 0px 0px 4px rgba(23,128,251,.9);
+}
+
+.searchInput{
+     width:100%;
+     margin-top: 1px;
+     margin-left: -1px;
+     border-radius: 0 4px 4px 0;
+     padding-right:20px;
+ }
 
 
 
