@@ -2,15 +2,19 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
+angular.module('pet1000', [
   'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
+  'pet1000.filters',
+  'pet1000.services',
+  'pet1000.directives',
+  'pet1000.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.when('/home', {templateUrl: 'views/home.html'});
+  $routeProvider.when('/petServices', {templateUrl: 'views/pet-services.html'});
+  $routeProvider.when('/petAdoption', {templateUrl: 'views/pet-adoption.html'});
+  $routeProvider.when('/petVIP', {templateUrl: 'views/pet1000-vip.html'});
+  $routeProvider.when('/petOffers', {templateUrl: 'views/pet-spec-offers.html'});
+  $routeProvider.when('/petStore', {templateUrl: 'views/pet-stores.html'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);

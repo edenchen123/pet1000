@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="pet1000">
 <head>
     <meta charset="utf-8">
     <title>My AngularJS App</title>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-<header class="navbar navbar-fixed-top poc-navbar poc-nav-inverse" data-ng-controller="HeaderController">
+<header class="navbar navbar-fixed-top poc-navbar poc-nav-inverse">
     <div class="container poc-nav-container">
         <div class="navbar-header">
             <button data-target="navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span
@@ -16,21 +16,23 @@
             <a href="#!/" class="navbar-brand hidden-sm">Pet1000</a></div>
         <div class="navbar-collapse collapse" style="height: auto;">
             <ul class="nav navbar-nav poc-nav">
-                <li ui-route="/" ng-class="{active: $uiRoute}"><a href="#!/">服务</a></li>
-                <li ui-route="/logReader" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/logReader">收养</a>
+                <li ui-route="/petServices" ng-class="{active: $uiRoute}">
+                    <a href="#/petServices">服务</a>
                 </li>
-                <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/customers">会员俱乐部</a>
+                <li ui-route="/petAdoption" ng-class="{active: $uiRoute}">
+                    <a href="#/petAdoption">收养</a>
                 </li>
-                <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/customers">优惠信息</a>
+                <li ui-route="/petVIP" ng-class="{active: $uiRoute}">
+                    <a href="#/petVIP">会员俱乐部</a>
                 </li>
-                <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/customers">寻找宠物店</a>
+                <li ui-route="/petOffers" ng-class="{active: $uiRoute}">
+                    <a href="#/petOffers">优惠信息</a>
                 </li>
-                <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/customers">论坛入口</a>
+                <li ui-route="/petOffers" ng-class="{active: $uiRoute}">
+                    <a href="#/petOffers">寻找宠物店</a>
+                </li>
+                <li ui-route="/customers" ng-class="{active: $uiRoute}">
+                    <a href="#/customers">论坛入口</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav poc-nav-right authentication" data-ng-hide="global.authenticated">
@@ -82,7 +84,7 @@
             </div>
             <div class="col-md-2" style="padding-top: 20px">
                 <div class="ftrSocial">
-                     <a>欢迎关注：</a>
+                    <a>欢迎关注：</a>
                     <img src="img/sinaminiblog.gif" width="25px" height="25px">
                     <img src="img/weixin.gif" width="25px" height="25px">
                     <img src="img/douban.gif" width="25px" height="25px">
@@ -94,7 +96,9 @@
 <div class="menuBar">
     <div class="container">menu</div>
 </div>
-<div ng-view></div>
+<div class="container content">
+    <div ng-view></div>
+</div>
 
 
 <script src="lib/jquery/jquery.js"></script>
@@ -102,8 +106,8 @@
 <script src="lib/angular/angular-route.js"></script>
 <script src="lib/bootstrap/bootstrap.js"></script>
 <script src="js/app.js"></script>
-<script src="js/services.js"></script>
-<script src="js/controllers.js"></script>
+<script src="js/services/services.js"></script>
+<script src="js/controllers/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
 </body>
