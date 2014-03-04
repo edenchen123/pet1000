@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>My AngularJS App</title>
   <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/site-header.css"/>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -14,7 +15,7 @@
                     class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
             <a href="#!/" class="navbar-brand hidden-sm">Pet1000</a></div>
         <div class="navbar-collapse collapse" style="height: auto;">
-            <ul class="nav navbar-nav poc-nav poc-nav-right">
+            <ul class="nav navbar-nav poc-nav">
                 <li ui-route="/" ng-class="{active: $uiRoute}"><a href="#!/">服务</a></li>
                 <li ui-route="/logReader" ng-class="{active: $uiRoute}" data-ng-show="global.user">
                     <a href="#!/logReader">收养</a>
@@ -29,14 +30,14 @@
                     <a href="#!/customers">寻找宠物店</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav poc-nav-right" data-ng-hide="global.authenticated">
+            <ul class="nav navbar-nav poc-nav-right authentication" data-ng-hide="global.authenticated">
                 <li><a href="signup">Signup</a>
                 </li>
                 <li class="divider-vertical"></li>
                 <li><a href="signin">Signin</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav poc-nav-right" data-ng-show="global.authenticated">
+            <ul class="nav navbar-nav poc-nav-right authentication" data-ng-show="global.authenticated">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         {{global.user.name}} <b class="caret"></b>
@@ -67,8 +68,10 @@
   <div ng-view></div>
 
 
+  <script src="lib/jquery/jquery.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/bootstrap/bootstrap.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
