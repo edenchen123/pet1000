@@ -11,7 +11,7 @@
 <header class="navbar navbar-fixed-top poc-navbar poc-nav-inverse" data-ng-controller="HeaderController">
     <div class="container poc-nav-container">
         <div class="navbar-header">
-            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span
+            <button data-target="navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span
                     class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
             <a href="#!/" class="navbar-brand hidden-sm">Pet1000</a></div>
         <div class="navbar-collapse collapse" style="height: auto;">
@@ -57,12 +57,12 @@
 <div id="content" class="poc-header">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h2>宠爱万千</h2>
 
-                <p>在这里与您的宠物充满欢乐</p>
+                <p>口号/logo</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding-top: 20px">
                 <ul>
                     <li><a>您好，欢迎来到宠爱万千！</a></li>
                     <li><a href="signin">登录</a></li>
@@ -70,11 +70,17 @@
                     <li><a href="#/help">宠物护理方案</a></li>
                 </ul>
             </div>
-            <div class="col-md-3" >
+            <div class="col-md-4" style="padding-top: 20px">
+                <select class="pull-left" style="height: 30px">
+                    <option>全站</option>
+                    <option>宠物</option>
+                    <option>宠友</option>
+                    <option>帖子</option>
+                </select>
                 <input class="pinput searchInput pull-left" placeholder="Search Products">
-                <button type="button" class="btn btn-info pull-left">Info</button>
+                <button type="button" class="btn btn-sm btn-info pull-left">搜索</button>
             </div>
-            <div class="col-md-2" >
+            <div class="col-md-2" style="padding-top: 20px">
                 <div class="ftrSocial">
                      <a>欢迎关注：</a>
                     <img src="img/sinaminiblog.gif" width="25px" height="25px">
