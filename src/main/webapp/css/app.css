@@ -13,44 +13,6 @@ html, body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-.poc-header {
-    background: url(../img/header_background.jpg) repeat-x;
-    height: 260px;
-    margin-bottom:-60px;
-}
-.poc-header > .container > h1 {
-    font-family: 'Nick Glade Bold';
-    font-weight: bolder;
-    font-size: 60px;
-    color: white;
-    text-shadow: #000 -1px -1px 0;
-}
-.poc-header > .container > p {
-    font-family: 'Nick Glade Bold';
-    font-size: 18px;
-    color: white;
-}
-.poc-header > .container {
-    padding-top: 80px;
-}
-.folderUp{position:relative;width:100%; height:60px;}
-.folderDown{position:relative; z-index:1;width:100%; height:40px; background:url(../img/folderBar_background.jpg) repeat-x;	box-shadow:#333 0px 3px 5px;}
-
-.folderBar{
-    width:100%;
-    height:100px;
-    z-index:5;
-}
-.folderBar .container > .glyphicon{
-    font-size:20px;
-    margin-top:8px;
-    float:left;
-}
-.folderBar .container > p{
-    font-size:18px;
-    margin:8px 15px;
-    float:left;
-}
 .content{
     margin-top:20px;
     width:100%;

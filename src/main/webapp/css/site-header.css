@@ -1,10 +1,12 @@
 .poc-nav > li > a {
     font-size: 15px;
-   	line-height: 22px;
+    line-height: 22px;
 }
+
 .poc-nav-right {
     float: right;
 }
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -17,9 +19,11 @@
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
 .poc-nav-container {
     min-height: 45px;
 }
+
 .navbar-brand {
     font-family: 'Nick Glade Bold';
     float: left;
@@ -28,74 +32,162 @@
     line-height: 22px;
     font-weight: bolder;
 }
+
 .poc-nav-inverse {
     background: #026ab4 url(../img/hdr_bg.gif);
 }
+
 .poc-nav-inverse .navbar-brand {
     color: #ffffff;
 }
+
 .poc-nav-inverse .navbar-brand:hover, .poc-nav-inverse .navbar-brand:focus {
     color: rgb(242, 46, 0);
     background-color: transparent;
 }
+
 .poc-nav-inverse .navbar-text {
     color: #ffffff;
 }
+
 .poc-nav-inverse .navbar-nav > li > a {
     color: #ffffff;
 }
+
 .poc-nav-inverse .navbar-nav > li > a:hover, .poc-nav-inverse .navbar-nav > li > a:focus {
     /*color: rgb(242, 46, 0);*/
     background-color: #66B4BD;
 }
+
 .poc-nav-inverse .authentication > li > a:hover, .poc-nav-inverse .navbar-nav > li > a:focus {
     /*color: rgb(242, 46, 0);*/
     background-color: transparent;
 }
+
 .poc-nav-inverse .navbar-nav > .active > a, .poc-nav-inverse .navbar-nav > .active > a:hover, .poc-nav-inverse .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: #080808;
 }
+
 .poc-nav-inverse .navbar-nav > .disabled > a, .poc-nav-inverse .navbar-nav > .disabled > a:hover, .poc-nav-inverse .navbar-nav > .disabled > a:focus {
     color: #444444;
     background-color: transparent;
 }
+
 .poc-nav-inverse .navbar-toggle {
     border-color: #333333;
 }
+
 .poc-nav-inverse .navbar-toggle:hover, .poc-nav-inverse .navbar-toggle:focus {
     background-color: #333333;
 }
+
 .poc-nav-inverse .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
+
 .poc-nav-inverse .navbar-collapse, .poc-nav-inverse .navbar-form {
     border-color: #101010;
 }
+
 .poc-nav-inverse .navbar-nav > .open > a, .poc-nav-inverse .navbar-nav > .open > a:hover, .poc-nav-inverse .navbar-nav > .open > a:focus {
     color: #ffffff;
     background-color: #080808;
 }
+
 @media (max-width: 767px) {
     .poc-nav-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
         border-color: #080808;
     }
+
     .poc-nav-inverse .navbar-nav .open .dropdown-menu .divider {
         background-color: #080808;
     }
+
     .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #999999;
     }
-    .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .poc-nav-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #ffffff;
         background-color: transparent;
     }
-    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a, .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .poc-nav-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #ffffff;
         background-color: #080808;
     }
-    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,  .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+
+    .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .poc-nav-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
         color: #444444;
         background-color: transparent;
     }
 }
+
+.poc-header {
+    background: url(../img/header_background.jpg) repeat-x;
+    height: 150px;
+}
+
+.poc-header h2 {
+    font-family: 'Nick Glade Bold';
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    text-shadow: #000 -1px -1px 0;
+    margin-top: 5px;
+}
+
+.poc-header p {
+    font-family: 'Nick Glade Bold';
+    font-size: 12px;
+    color: white;
+    padding-left: 30px;
+}
+
+.poc-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.poc-header ul > li {
+    padding: 0 10px;
+    border-right: 1px solid #48AfE6;
+    display: list-item;
+    float: left;
+    text-align: -webkit-match-parent;
+}
+
+.poc-header ul > li > a {
+    color: #ffffff;
+    font-family: 'Nick Glade Bold';
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.poc-header > .container {
+    padding-top: 60px;
+}
+
+.menuBar {
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+}
+
+.ftrSocial{
+    width: 100%;
+    padding-top: 8px;
+    overflow: hidden;
+}
+.ftrSocial > a{
+    color: #ffffff;
+    font-family: 'Nick Glade Bold';
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+

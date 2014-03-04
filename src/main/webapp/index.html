@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/bootstrap.css"/>
-  <link rel="stylesheet" href="css/site-header.css"/>
-  <link rel="stylesheet" href="css/app.css"/>
+    <meta charset="utf-8">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/site-header.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
 <header class="navbar navbar-fixed-top poc-navbar poc-nav-inverse" data-ng-controller="HeaderController">
@@ -21,7 +21,7 @@
                     <a href="#!/logReader">收养</a>
                 </li>
                 <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
-                    <a href="#!/customers">会员卡</a>
+                    <a href="#!/customers">会员俱乐部</a>
                 </li>
                 <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
                     <a href="#!/customers">优惠信息</a>
@@ -29,12 +29,15 @@
                 <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
                     <a href="#!/customers">寻找宠物店</a>
                 </li>
+                <li ui-route="/customers" ng-class="{active: $uiRoute}" data-ng-show="global.user">
+                    <a href="#!/customers">论坛入口</a>
+                </li>
             </ul>
             <ul class="nav navbar-nav poc-nav-right authentication" data-ng-hide="global.authenticated">
-                <li><a href="signup">Signup</a>
+                <li><a href="signup">注册</a>
                 </li>
                 <li class="divider-vertical"></li>
-                <li><a href="signin">Signin</a>
+                <li><a href="signin">登录</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav poc-nav-right authentication" data-ng-show="global.authenticated">
@@ -53,29 +56,48 @@
 </header>
 <div id="content" class="poc-header">
     <div class="container">
-        <h1>LOG MONITOR</h1>
-        <p> You can monitor you app log from any datasource with this section. </p>
-    </div>
-</div>
-<div class="folderBar">
-    <div class="folderUp"></div>
-    <div class="folderDown">
-        <div class="container"> <span class="glyphicon glyphicon-folder-open"></span>
-            <p> - file system/mongodb/RSDB</p>
+        <div class="row">
+            <div class="col-md-3">
+                <h2>宠爱万千</h2>
+
+                <p>在这里与您的宠物充满欢乐</p>
+            </div>
+            <div class="col-md-5" style="padding-top: 35px">
+                <ul>
+                    <li><a>您好，欢迎来到宠爱万千！</a></li>
+                    <li><a href="signin">登录</a></li>
+                    <li><a href="#/help">帮助</a></li>
+                    <li><a href="#/help">宠物护理方案</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2" style="padding-top: 25px">
+                <div class="well well-sm" style="background-color: inherit; border:1px solid #026ab4">我的宠物</div>
+            </div>
+            <div class="col-md-2" style="padding-top: 25px">
+                <div class="ftrSocial">
+                     <a>欢迎关注：</a>
+                    <img src="img/sinaminiblog.gif" width="25px" height="25px">
+                    <img src="img/weixin.gif" width="25px" height="25px">
+                    <img src="img/douban.gif" width="25px" height="25px">
+                </div>
+            </div>
         </div>
     </div>
 </div>
-  <div ng-view></div>
+<div class="menuBar">
+    <div class="container">menu</div>
+</div>
+<div ng-view></div>
 
 
-  <script src="lib/jquery/jquery.js"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="lib/bootstrap/bootstrap.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/bootstrap/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
 </body>
 </html>
