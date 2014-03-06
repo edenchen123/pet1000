@@ -218,6 +218,7 @@
 
 .pet-menu > li{
     border-right : 1px solid #ffffff;
+    cursor: pointer;
 }
 .pet-menu > li > a {
     color: #ffffff;
@@ -232,5 +233,11 @@
   background-color: #66B4BD;
 }
 
+.pet-menu .open > a,
+.pet-menu .open > a:hover,
+.pet-menu .open > a:focus {
+    background-color: #66B4BD;
+    border-color: #428bca;
+}
 
 
