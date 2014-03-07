@@ -1,3 +1,7 @@
+li {
+    list-style: none;
+}
+
 .poc-nav > li > a {
     font-size: 15px;
     line-height: 22px;
@@ -145,7 +149,6 @@
 }
 
 .poc-header ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -216,10 +219,11 @@
     background-color: #428bca;
 }
 
-.pet-menu > li{
-    border-right : 1px solid #ffffff;
+.pet-menu > li {
+    border-right: 1px solid #ffffff;
     cursor: pointer;
 }
+
 .pet-menu > li > a {
     color: #ffffff;
     font-family: 'Nick Glade Bold';
@@ -229,8 +233,8 @@
 
 .pet-menu > li > a:hover,
 .pet-menu > li > a:focus {
-  text-decoration: none;
-  background-color: #66B4BD;
+    text-decoration: none;
+    background-color: #66B4BD;
 }
 
 .pet-menu .open > a,
@@ -240,4 +244,75 @@
     border-color: #428bca;
 }
 
+.pet-menu .dropdown-menu {
+    min-width: 500px;
+}
+
+.pet-menu .dropdown-menu > li {
+    float: left;
+}
+
+.pet-menu .dropdown-menu > ul {
+    padding-left: 10px;
+}
+
+.submenu {
+    padding-left: 20px;
+}
+
+.submenu-heading {
+    color: #003366;
+    font-family: 'Nick Glade Bold';
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    cursor: default;
+}
+
+.submenu .menuItem a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #003366 !important;
+    height: auto;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.submenu .menuItem a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.submenu .viewAll {
+    margin-top: 10px;
+}
+
+.submenu .viewAll a {
+    display: inline;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.submenu .viewAll a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #003366 !important;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.submenu .viewAl a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.submenu .divider {
+    cursor: default;
+    margin: 5px 0;
+}
 
