@@ -18,16 +18,15 @@
 
 
     <jaxrs:server address="/petServices">
-        <!--<jaxrs:providers>-->
+        <jaxrs:providers>
         <!--<bean class="com.hbo.mpo.vip.services.helpers.VipExceptionMapper" />-->
-        <!--<bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />-->
+        <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
         <!--<bean class="com.hbo.mpo.vip.security.VipServicesSecurityHandler" />-->
-        <!--</jaxrs:providers>-->
+        </jaxrs:providers>
         <jaxrs:serviceBeans>
             <ref bean="petServices"/>
         </jaxrs:serviceBeans>
         <jaxrs:extensionMappings>
-            <entry key="xml" value="application/xml"/>
             <entry key="json" value="application/json"/>
         </jaxrs:extensionMappings>
     </jaxrs:server>
