@@ -23,7 +23,7 @@ public interface PetServices {
 
 	@Permission(permission="READ")
 	@GET
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	@Produces({MediaType.APPLICATION_JSON })
 	@Path("/getAllAvaServices/{username}")
 	public String getAllAvaServices(@PathParam("username") String userName) throws Exception;
 
