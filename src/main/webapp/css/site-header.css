@@ -244,20 +244,13 @@ li {
     border-color: #428bca;
 }
 
-.pet-menu .dropdown-menu {
-    min-width: 500px;
-}
-
-.pet-menu .dropdown-menu > li {
-    float: left;
-}
-
 .pet-menu .dropdown-menu > ul {
     padding-left: 10px;
 }
 
 .submenu {
-    padding-left: 20px;
+    float: left;
+    padding-left: 0px;
 }
 
 .submenu-heading {
